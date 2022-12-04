@@ -1,0 +1,35 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ [class*="block-editor-block"] {
+	 &.wp-block-create-block-myyoutube {
+		 padding: 8px;
+
+		.label {
+			font-size: 1.2em;
+			font-weight: 700;
+		}
+		.item {
+			display: flex;
+			gap: 16px;
+			align-items: center;
+	
+			> div:first-child {
+				max-width: 100px;
+			}
+			> div:not(:first-child) {
+				flex-grow: 1;
+			}
+		}
+
+		input[type="text"] {
+			 font-size: 1.6em;
+			 color: inherit;
+			 background: inherit;
+			 border: 0;
+		 }
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/myyoutube",
+  "version": "0.1.0",
+  "title": "MY Youtube",
+  "category": "text",
+  "icon": "flag",
+  "description": "Replace a Youtube link",
+  "attributes": {
+    "url": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "[data-url]",
+      "attribute": "data-url"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "wpblocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
